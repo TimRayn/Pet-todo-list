@@ -1,0 +1,38 @@
+.check-btn,.delete-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.check-btn {
+    background-color: violet;
+    &.done {
+        background-image: url(../../images/icon-check.svg);
+    }
+    &.notDone {
+        background-image: url(../../images/icon-moon.svg);
+    }
+}
+
+.delete-button {
+    background-image: url(../../images/icon-cross.svg);
+    visibility: hidden;
+}
+
+.todo-text {
+    &.done {
+        text-decoration: line-through;
+        color: lightgray;
+    }
+}
+
+.todo-list-item:hover{
+    .delete-button{
+        visibility: visible;
+    }
+}
+
+

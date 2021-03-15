@@ -1,0 +1,15 @@
+.toggle-theme-btn {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.day {
+        background-image: url(../../images/icon-sun.svg);
+    }
+    &.night {
+        background-image: url(../../images/icon-moon.svg);
+    }
+}
